@@ -24,63 +24,127 @@ Add your timetable using ```<td>``` tag.
 Execute the program using runserver command.
 
 ## PROGRAM
-'''
-''
-<pre><code>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta <name="viewport" content="width=device-width,initial-scale=1.0"></name>
-        <title>table</title>
-        </head>
-        <body bgcolor="cyan">
-            <img src="/static/logo.png" height="100" width="540">
-            <table border="5" cellpadding="20" bg color="orange" align="center">
-                <tr>
-                    <th bgcolor="red">TIME</th>
-                    <th bgcolor="red">MONDAY</th>
-                    <th bgcolor="red">TUESDAY</th>
-                    <th bgcolor="red">WEDNESDAY</th>
-                    <th bgcolor="red">THURSDAY</th>
-                    <th bgcolor="red">FRIDAY</th>
-                    <th bgcolor="red">SATURDAY</th>
-                </tr>
-                <tr>
-                    <th bgcolor="red">8-10</th>
-                    <td>-</td>
-                    <td>DATASCIENCE</td>
-                    <td>DIGITAL ELECTRONICS</td>
-                    <td>PHYSICS</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th bgcolor="red">10-12</th>
-                    <td>WEB DEVELOPMENT</td>
-                    <td>DATASCIENCE</td>
-                    <td>WEB DEVELOPMENT</td>
-                    <td>CHEMISTRY</td>
-                    <td>ENGLISH</td>
-                    <td>PHYSICS</td>
-                </tr>
-                <tr>
-                    <th bgcolor="red">1-3</th>
-                    <td>PHYSICS</td>
-                    <td>DIGITAL ELECTRONICS</td>
-                    <td>MENTOR MEET</td>
-                    <td>ENGLISH</td>
-                    <td>DATASCIENCE</td>
-                    <td>WEB DEVELOPMENT</td>
-                </tr>
-            </table>
-        </body>
-</html>
-    </code></pre>
-'''
-## OUTPUT
-![image](https://github.com/user-attachments/assets/5c75e295-abfd-485e-8cda-4be17ac5d82c)
+<!DOCTYPE html><html>
+<head>
+    <title>Class Timetable</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: yellow;
+        }
+        .highlight {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <img src="/static/logo.png" height="100" width="750">
 
+    
+<h2>Class Timetable</h2>
+<table>
+    <tr>
+        <th>Day/Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <tr class="highlight">
+        <td>8-10</td>
+        <td>OS</td>
+        <td>FREE SLOT</td>
+        <td>FREE SLOT</td>
+        <td>OS</td>
+        <td>FREE SLOT</td>
+    </tr>
+    <tr class="highlight">
+        <td>10-12</td>
+        <td>FREE SLOT</td>
+        <td>CALCULUS</td>
+        <td>HUMAN VALUES</td>
+        <td>FWAD</td>
+        <td>GAME PRG</td>
+        
+    </tr>
+    <tr>
+        <td>12-1</td>
+        <td colspan="5">LUNCH</td>
+    </tr>
+    <tr class="highlight">
+        <td>1-3</td>
+        <td>EEE</td>
+        <td>FWAD</td>
+        <td>MENTOR</td>
+        <td>GAME PRG</td>
+        <td>CALCULUS</td>
+    </tr>
+    <tr class="highlight">
+        <td>3-5</td>
+        <td>FREE SLOT</td>
+        <td>FREE SLOT</td>
+        <td>EEE</td>
+        <td>FREE SLOT</td>
+        <td>FREE SLOT</td>
+    </tr>
+</table>
+
+<h2>Subject Details</h2>
+<table>
+    <tr>
+        <th>S. No.</th>
+        <th>Subject Code</th>
+        <th>Subject Name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>19AI414</td>
+        <td>Fundamentals of Web Application Development (FWAD)</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>19EE305</td>
+        <td>EEE</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>19CS405</td>
+        <td>Operating system</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>19HS801</td>
+        <td>Human values and professional ethics</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>19MA201</td>
+        <td>Calculus and Matrix Algebra (MAT)</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>19AL513</td>
+        <td>Game programming</td>
+    </tr>
+   
+</table>
+</center>
+
+</body>
+</html>
+                
+## OUTPUT
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
